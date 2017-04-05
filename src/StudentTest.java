@@ -16,6 +16,8 @@ public class StudentTest
         log.info("Initialization of s1 and s2 complete");
     }
 
+    // this is to test github via IntelliJ
+
     public void testSetName()
     {
         s1.setName("Ingrid");
