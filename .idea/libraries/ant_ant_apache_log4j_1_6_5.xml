@@ -1,0 +1,14 @@
+<component name="libraryTable">
+  <library name="ant:ant-apache-log4j:1.6.5" type="repository">
+    <properties maven-id="ant:ant-apache-log4j:1.6.5" />
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/lib/ant-apache-log4j-1.6.5.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/log4j-1.2.15.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$PROJECT_DIR$/lib/log4j-appender-1.0-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/log4j-jboss-logmanager-1.0.1.final-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
