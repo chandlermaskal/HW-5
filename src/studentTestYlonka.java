@@ -12,20 +12,21 @@ public class studentTestYlonka {
         Senior.getYear();
 
         /*Polymorphism*/
-        studentYlonka Freshman = new freshman();
+        freshman Freshman = new freshman();
         Freshman.setName("Max");
         Freshman.setRin(1234566);
         Freshman.getYear();
+        Freshman.setMentor("Chandler");
         /*Cannot set concentration because this class derives from student, not senior*/
 
         /*Polymorphism cont. all objects have different predetermined values as Year*/
         studentYlonka[] students = { new senior(), new freshman()};
         for (studentYlonka x : students)
         {
-            System.out.print(x.getYear() + "\n");
+            System.out.println(x.getYear());
         }
 
-        System.out.print("Name: " + Senior.getName() + " RIN: " + Senior.getRin() + " Concentration: " + Senior.getConc() + " Year: " + Senior.getYear());
-        System.out.print("\nName: " + Freshman.getName() + " RIN: " + Freshman.getRin() + " Year: " + Freshman.getYear());
+        System.out.println("Name: " + Senior.getName() + " RIN: " + Senior.getRin() + " Concentration: " + Senior.getConc() + " Year: " + Senior.getYear());
+        System.out.print("Name: " + Freshman.getName() + " RIN: " + Freshman.getRin() + " Year: " + Freshman.getYear() + " Mentor: " + Freshman.getMentor());
     }
 }
