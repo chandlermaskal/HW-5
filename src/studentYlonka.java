@@ -3,55 +3,60 @@
  */
 /*Abstraction, Abstract class, and Access modifiers*/
 public abstract class studentYlonka implements member {
-    public String name;
+    protected String name;
     private int rin;
     public int year;
 
     public String getName() {
-        return name;
+        return this.name;
     }
 
     public int getRin() {
-        return rin;
+        return this.rin;
     }
 
-    public int getYear() {
-        return year;
-    }
+    public int getYear() { return this.year; }
 
     public void setName(String newName) {
-        name = newName;
+        this.name = newName;
     }
 
     public void setRin(int newRin) {
-        rin = newRin;
+        this.rin = newRin;
     }
 
 }
 
 /*Inheritance & Polymorphism*/
 class senior extends studentYlonka {
-    int year = 4;
-    public String concentration;
 
-    public int getYear() {
-        return year;
+    private String concentration;
+
+    public senior() {
+         super.year = 4;
     }
 
     public String getConc() {
-        return concentration;
+        return this.concentration;
     }
 
     public void setConc(String newConc) {
-        concentration = newConc;
+        this.concentration = newConc;
     }
 }
 
 class freshman extends studentYlonka {
-    int year = 1;
+    public String mentor;
 
-    public int getYear() {
-        return year;
+    public freshman() {
+        super.year = 1;
     }
 
+    public void setMentor(String mentor) {
+        this.mentor = mentor;
+    }
+
+    public String getMentor() {
+        return this.mentor;
+    }
 }
