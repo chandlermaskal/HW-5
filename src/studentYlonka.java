@@ -3,9 +3,9 @@
  */
 /*Abstraction, Abstract class, and Access modifiers*/
 public abstract class studentYlonka implements member {
-    private String name;
+    public String name;
     private int rin;
-    private int year;
+    public int year;
 
     public String getName() {
         return name;
@@ -32,7 +32,7 @@ public abstract class studentYlonka implements member {
 /*Inheritance & Polymorphism*/
 class senior extends studentYlonka {
     int year = 4;
-    private String concentration;
+    public String concentration;
 
     public int getYear() {
         return year;
