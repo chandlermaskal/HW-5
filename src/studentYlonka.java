@@ -15,7 +15,9 @@ public abstract class studentYlonka implements member {
         return this.rin;
     }
 
-    public int getYear() { return this.year; }
+    public int getYear() { 
+        return this.year; 
+    }
 
     public void setName(String newName) {
         this.name = newName;
@@ -29,7 +31,6 @@ public abstract class studentYlonka implements member {
 
 /*Inheritance & Polymorphism*/
 class senior extends studentYlonka {
-
     private String concentration;
 
     public senior() {
